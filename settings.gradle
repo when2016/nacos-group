@@ -1,3 +1,3 @@
-rootProject.name = "qiniu-audio-converter"
-include 'audit-converter-service'
+rootProject.name = "nacos-group"
+include 'nacos-springboot'
 

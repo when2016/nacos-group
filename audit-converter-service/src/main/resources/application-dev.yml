@@ -1,9 +1,0 @@
-server:
-  port: 9100
-spring:
-  application:
-    name: audit-converter-serivce
-logging:
-  config: classpath:logback-dev.xml
-  level:
-    org.springframework: INFO
