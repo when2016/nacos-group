@@ -1,0 +1,9 @@
+#服务名 配置中心url
+spring:
+  application:
+    name: nacos-config-example
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml

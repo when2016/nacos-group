@@ -1,6 +1,6 @@
 apply plugin: 'io.spring.dependency-management'
 
-group = 'com.longmaodata.service'
+group = 'com.lmcat.service'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
@@ -16,10 +16,12 @@ dependencies {
     implementation("commons-io:commons-io:2.6")
     implementation("org.apache.commons:commons-exec:1.3")
     implementation("org.apache.commons:commons-lang3:3.7")
+    implementation("org.springframework.cloud:spring-cloud-starter-alibaba-nacos-config:0.9.0.RELEASE")
 
 }
 
-jar { baseName = 'nacos-springboot'
+jar {
+    baseName = 'nacos-springboot'
     version = '0.0.1'
     manifest {
         attributes "Manifest-Version": 1.0,
