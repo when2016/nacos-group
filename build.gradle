@@ -1,0 +1,74 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        maven { url = 'http://tools.nexus.shandianshua.com/nexus/content/groups/public/' }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+subprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'maven'
+    apply plugin: 'maven-publish'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'org.springframework.boot'
+
+    targetCompatibility = 1.8
+    sourceCompatibility = 1.8
+    [compileJava,compileTestJava,javadoc]*.options*.encoding = "UTF-8"
+
+    dependencies {
+
+        // implementation 这个指令的特点就是，对于使用了该命令编译的依赖，对该项目有依赖的项目将无法访问到使用该命令编译的依赖中的任何程序，也就是将该依赖隐藏在内部，而不对外部公开
+        // api project 依赖其它模块
+        // testCompile 只在单元测试代码的编译以及最终打包测试apk时有效
+        // provided 不传递依赖
+        // compile 传递依赖
+        runtimeOnly('org.springframework.boot:spring-boot-devtools')
+        testImplementation('org.springframework.boot:spring-boot-starter-test')
+    }
+
+    repositories {
+        mavenLocal()
+        maven { url = 'http://tools.nexus.shandianshua.com/nexus/content/groups/public/' }
+    }
+
+
+    sourceSets{
+        main{
+            resources{
+                srcDirs = ['src/main/java', 'src/main/resources']
+            }
+        }
+    }
+
+    task sourceJar(type: Jar) {
+        from sourceSets.main.allJava
+    }
+
+    publishing {
+        repositories {
+            maven {
+                name 'releases'
+                url "$nexusReleases"
+                credentials {
+                    username "$nexusUsername"
+                    password "$nexusPassword"
+                }
+            }
+        }
+        publications {
+            mavenJava(MavenPublication) {
+                from components.java
+                artifact sourceJar {
+                    classifier "sources"
+                }
+            }
+        }
+    }
+
+}
