@@ -1,4 +1,4 @@
-package com.lmcat.service;
+package com.lmcat.nacos;
 
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import org.springframework.boot.SpringApplication;
