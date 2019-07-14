@@ -13,7 +13,7 @@ public class ProviderTestController {
 
     @GetMapping("hello")
     public String hello(@RequestParam String name) {
-        log.info("invoked name = " + name);
+        log.info("invoked hello name = {}", name);
         return "Hello Nacos Discovery " + name;
     }
 }
