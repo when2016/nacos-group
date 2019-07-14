@@ -37,7 +37,8 @@ public class NacosConsumerApplication {
             // 通过spring cloud common中的负载均衡接口选取服务提供节点实现接口调用
             ServiceInstance serviceInstance = loadBalancerClient.choose("service-provider");
 
-            String url = "http://192.168.43.212:8070/echo/" + str;
+            //String url = "http://192.168.43.212:8070/echo/" + str;
+            String url = serviceInstance.getUri() + "/echo/" + str;
 
             RestTemplate restTemplate = new RestTemplate();
             return restTemplate.getForObject(url, String.class);
