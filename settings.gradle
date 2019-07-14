@@ -2,3 +2,6 @@ rootProject.name = "nacos-group"
 include 'nacos-springboot-config'
 include 'nacos-springboot-discovery'
 
+include 'nacos-springcloud-config'
+//include 'nacos-springboot-discovery'
+

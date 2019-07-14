@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: nacos-springcloud-config
+  cloud:
+    nacos:
+      config:
+        server-addr: 188.131.169.24:8848
+        file-extension: yml
+        namespace: 8e188d50-6ef9-43b6-996e-3ea6ca27f3e9
+        group: test
+
