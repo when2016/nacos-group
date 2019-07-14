@@ -1,9 +1,11 @@
 #服务名 配置中心url
 spring:
   application:
-    name: nacos-config-example
+    name: nacos-springboot
   cloud:
     nacos:
       config:
-        server-addr: 127.0.0.1:8848
+        server-addr: 188.131.169.24:8848
         file-extension: yml
+        namespace: 8e188d50-6ef9-43b6-996e-3ea6ca27f3e9
+        group: test
