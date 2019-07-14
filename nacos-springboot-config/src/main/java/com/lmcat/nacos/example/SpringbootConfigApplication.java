@@ -1,4 +1,4 @@
-package com.lmcat.nacos;
+package com.lmcat.nacos.example;
 
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import org.springframework.boot.SpringApplication;
@@ -10,9 +10,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 //@NacosPropertySource(dataId = "nacos-springboot", autoRefreshed = true)
 @NacosPropertySource(dataId = "example", autoRefreshed = true)
-public class SpringbootApplication {
+public class SpringbootConfigApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootApplication.class, args);
+        SpringApplication.run(SpringbootConfigApplication.class, args);
     }
 }

@@ -1,4 +1,4 @@
-package com.lmcat.nacos.service;
+package com.lmcat.nacos.example.service;
 
 import com.alibaba.nacos.api.annotation.NacosInjected;
 import com.alibaba.nacos.api.config.ConfigService;

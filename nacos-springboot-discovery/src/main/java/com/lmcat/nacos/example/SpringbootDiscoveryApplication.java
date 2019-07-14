@@ -1,4 +1,4 @@
-package com.lmcat.nacos;
+package com.lmcat.nacos.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

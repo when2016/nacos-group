@@ -1,4 +1,4 @@
-package com.lmcat.nacos.controller;
+package com.lmcat.nacos.example.controller;
 
 import com.alibaba.nacos.api.config.annotation.NacosValue;
 import org.springframework.stereotype.Controller;

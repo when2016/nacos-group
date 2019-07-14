@@ -1,4 +1,4 @@
-package com.lmcat.nacos.controller;
+package com.lmcat.nacos.example.controller;
 
 import com.alibaba.nacos.api.annotation.NacosInjected;
 import com.alibaba.nacos.api.exception.NacosException;

@@ -1,6 +1,6 @@
 apply plugin: 'io.spring.dependency-management'
 
-group = 'com.lmcat.service'
+group = 'com.lmcat.nacos.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
@@ -23,10 +23,10 @@ dependencies {
 }
 
 jar {
-    baseName = 'nacos-springboot'
+    baseName = 'nacos-springboot-config'
     version = '0.0.1'
     manifest {
         attributes "Manifest-Version": 1.0,
-                'Main-Class': 'com.lmcat.nacos.SpringbootApplication'
+                'Main-Class': 'com.lmcat.nacos.example.SpringbootConfigApplication'
     }
 }
