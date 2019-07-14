@@ -27,6 +27,6 @@ jar {
     version = '0.0.1'
     manifest {
         attributes "Manifest-Version": 1.0,
-                'Main-Class': 'com.longmaodata.service.Application'
+                'Main-Class': 'com.lmcat.nacos.SpringbootApplication'
     }
 }
