@@ -1,9 +1,9 @@
 server:
-  port: 8070
+  port: 8080
 
 spring:
   application:
-    name: service-provider
+    name: service-consumer
   cloud:
     nacos:
       discovery:

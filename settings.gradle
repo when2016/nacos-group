@@ -4,4 +4,5 @@ include 'nacos-springboot-discovery'
 
 include 'nacos-springcloud-config'
 include 'nacos-springcloud-discovery/nacos-springcloud-provider'
+include 'nacos-springcloud-discovery/nacos-springcloud-consumer'
 

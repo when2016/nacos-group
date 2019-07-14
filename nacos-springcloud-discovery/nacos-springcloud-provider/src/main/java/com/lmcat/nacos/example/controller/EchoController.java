@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("discovery")
 public class EchoController {
 
-    @RequestMapping(value = "/echo/{string}", method = RequestMethod.GET)
+    @RequestMapping(value = "echo/{string}", method = RequestMethod.GET)
     public String echo(@PathVariable String string) {
         return "Hello Nacos Discovery " + string;
     }
