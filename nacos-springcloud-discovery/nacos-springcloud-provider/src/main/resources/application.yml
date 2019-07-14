@@ -1,0 +1,3 @@
+nacos:
+  discovery:
+    server-addr: 188.131.169.24:8848
