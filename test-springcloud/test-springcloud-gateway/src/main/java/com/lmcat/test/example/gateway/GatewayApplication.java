@@ -1,4 +1,4 @@
-package com.lmcat.test.example;
+package com.lmcat.test.example.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class SpringCloudGatewayApplication {
+public class GatewayApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringCloudGatewayApplication.class, args);
+        SpringApplication.run(GatewayApplication.class, args);
     }
 }
