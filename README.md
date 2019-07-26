@@ -10,3 +10,6 @@ nacos.config.server-addr=188.131.169.24:8848
 # health http://localhost:8080/actuator/health
 #management.endpoints.web.exposure.include=*
 #management.endpoint.health.show-details=always
+
+##启动nacos
+##http://www.springcloud.cn/view/412

@@ -6,3 +6,6 @@ include 'nacos-springcloud-config'
 include 'nacos-springcloud-discovery/nacos-springcloud-provider'
 include 'nacos-springcloud-discovery/nacos-springcloud-consumer'
 
+include 'test-springcloud/test-springcloud-eureka'
+include 'test-springcloud/test-springcloud-gateway'
+

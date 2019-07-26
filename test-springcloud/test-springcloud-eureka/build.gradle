@@ -1,0 +1,32 @@
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.lmcat.test.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    runtimeOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation('com.alibaba:fastjson:1.2.39')
+    implementation("commons-io:commons-io:2.6")
+    implementation("org.apache.commons:commons-exec:1.3")
+    implementation("org.apache.commons:commons-lang3:3.7")
+
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.1.2.RELEASE')
+
+
+}
+
+jar {
+    baseName = 'test-springboot-eureka'
+    version = '0.0.1'
+    manifest {
+        attributes "Manifest-Version": 1.0,
+                'Main-Class': 'com.lmcat.test.example.EurekaServerApplication'
+    }
+}
