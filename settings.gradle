@@ -8,4 +8,6 @@ include 'nacos-springcloud-discovery/nacos-springcloud-consumer'
 
 include 'test-springcloud/test-springcloud-eureka'
 include 'test-springcloud/test-springcloud-gateway'
+include 'test-springcloud/test-springcloud-userservice'
+include 'test-springcloud/test-springcloud-userservice-lb'
 
