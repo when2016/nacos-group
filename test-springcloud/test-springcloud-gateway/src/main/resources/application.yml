@@ -8,6 +8,12 @@ spring:
       discovery:
         locator:
           enabled: true
+#      routes:
+#        - id: blog
+#          url: http://blog.yuqiyu.com
+#          predicates:
+#            #匹配路径转发
+#            - Path=/api-boot-datasource-switch.html
 # Eureka Server 配置
 eureka:
   client:
