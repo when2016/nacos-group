@@ -4,7 +4,7 @@ spring:
     name: test-springcloud-eureka
 # 服务端口号
 server:
-  port: 10000
+  port: 18001
 
 #Eureka 相关配置
 eureka:

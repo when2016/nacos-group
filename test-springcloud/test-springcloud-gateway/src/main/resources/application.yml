@@ -18,7 +18,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:10000/eureka/
+      defaultZone: http://localhost:18001/eureka/
 # 配置Gateway日志等级，输出转发细节信息
 logging:
   level:
